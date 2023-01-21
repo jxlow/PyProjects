@@ -1,4 +1,5 @@
 import random
+import pyperclip
 
 def char() :
     characterlist = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
@@ -13,3 +14,5 @@ for _ in range(15) :
     
 finalpassword = password[:5] + '-' + password[5:10]+ '-' + password[10:]
 print(finalpassword)
+print('Copied to clipboard')
+pyperclip.copy(finalpassword)
