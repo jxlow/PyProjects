@@ -12,7 +12,6 @@ import time
 seconds = 30
 
 print("Auto mouse-jiggler activated. Press ^C to cancel")
-alert(text='', title='', button='OK')
 
 try:
     while True :
