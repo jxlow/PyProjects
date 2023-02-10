@@ -10,7 +10,13 @@ response_dict = json.loads(response.text)
 for i in response_dict["items"] :
     for j in i["carpark_data"] :
         if j["carpark_number"] == carparkid:
-            print("Last updated on: " + j["update_datetime"])
+            updatedTime = j["update_datetime"]
+            print("Last updated on: " + updatedTime)
             for k in j["carpark_info"]:
-                print("Total lots: " +k["total_lots"])
-                print("Lots available: " +k["lots_available"])
+                totallots = int(k["total_lots"])
+                lotsAvailable = int(k["lots_available"])
+                print("Total lots: ", totallots)
+                print("Lots Available: ", lotsAvailable)
+
+lotsUnavailable = totallots - lotsAvailable
+print("Lots Unavailable: ", lotsUnavailable)
