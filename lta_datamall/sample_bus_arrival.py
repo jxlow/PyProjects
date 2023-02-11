@@ -9,7 +9,7 @@ import time
 
 time_sleep = 5
 print("Starting monitoring. Press CTRL + C to terminate")
-
+load_dotenv()
 
 try:
     while True:
@@ -17,7 +17,7 @@ try:
         BS_CODE = 84031
         BUS_SERVICE_NO = 28
 
-        load_dotenv()
+        
         url = 'http://datamall2.mytransport.sg/'
         url_path_bus_arrival = 'ltaodataservice/BusArrivalv2?'
 
