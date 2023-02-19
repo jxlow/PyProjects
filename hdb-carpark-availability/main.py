@@ -2,6 +2,8 @@ import requests
 import json
 
 carparkid = input("Enter carpark ID: ")
+if len(carparkid) < 1 :
+    carparkid = "B10M"
 
 url = 'https://api.data.gov.sg/v1/transport/carpark-availability'
 response = requests.get(url)
