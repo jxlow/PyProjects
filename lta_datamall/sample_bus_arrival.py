@@ -15,7 +15,7 @@ try:
     while True:
         # BS_CODE = int(input("Enter bus stop code: "))
         BS_CODE = 84031
-        BUS_SERVICE_NO = 28
+        BUS_SERVICE_NO = 67
 
         
         url = 'http://datamall2.mytransport.sg/'
@@ -54,7 +54,7 @@ try:
         if int(minutes) < 1 :
             print("Bus", BUS_SERVICE_NO, "is arriving soon.")
         else :
-            print("Bus", BUS_SERVICE_NO, "is arriving in", minutes, "mins.")
+            print("Bus", BUS_SERVICE_NO, "is arriving in", minutes, "min(s).")
         time.sleep(time_sleep)
     
 except KeyboardInterrupt :
