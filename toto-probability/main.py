@@ -2,7 +2,7 @@ import random
 
 winning_numbers = [2,5,19,24,34,44]
 
-system = 6
+system = 10
 
 number_list = []
 for number in range(50):
